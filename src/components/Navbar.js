@@ -17,7 +17,7 @@ export default function Navbar(props) {
       color === "black"
         ? props.history.push("/")
         : props.history.push(`/${route}`);
-    });
+    }, 1000);
   };
 
   const transitionActive1 = transition ? "circleTransition1" : "";

@@ -1,25 +1,28 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+font-family: "Sacramento", cursive; */
+
 .circlesContainer {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 10px solid black;
+  border: 10px solid #000d1a;
   height: 145px;
   width: 145px;
 }
 
 .dotCircle {
   position: fixed;
-  background: black;
-  border: 5px solid black;
+  background: #000d1a;
+  border: 5px solid #000d1a;
   height: 55px;
   width: 55px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  animation: pulse 2s infinite;
+  /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1); */
+  /* animation: pulse 2s infinite; */
 }
 
 .blueCircle {
@@ -32,8 +35,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  animation: pulse 2s infinite;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 1); */
+  /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1); */
+  /* animation: pulse 2s infinite; */
 }
 
 .redCircle {
@@ -46,8 +50,9 @@
   right: 50%;
   transform: translate(50%, -50%);
   transition: all 1s;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  animation: pulse 2s infinite;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 1); */
+  /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1); */
+  /* animation: pulse 2s infinite; */
 }
 .purpleCircle {
   background: #613f75;
@@ -59,8 +64,9 @@
   left: 50%;
   transform: translate(-50%, 50%);
   transition: all 1s;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  animation: pulse 2s infinite;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 1); */
+  /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1); */
+  /* animation: pulse 2s infinite; */
 }
 .greyCircle {
   background: #484349;
@@ -72,8 +78,9 @@
   right: 50%;
   transform: translate(50%, 50%);
   transition: all 1s;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  animation: pulse 2s infinite;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 1); */
+  /* box-shadow: 0 0 0 0 rgba(39,39,39, 1); */
+  /* animation: pulse 2s infinite; */
 }
 
 .circleTransition1 {
@@ -81,7 +88,7 @@
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-out;
   margin: 100px;
 }
 
@@ -90,7 +97,7 @@
   top: 0;
   right: 0;
   transform: translate(50%, -50%);
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-out;
   margin: 100px;
 }
 
@@ -99,7 +106,7 @@
   bottom: 0;
   left: 0;
   transform: translate(-50%, 50%);
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-out;
   margin: 100px;
 }
 .circleTransition4 {
@@ -107,7 +114,7 @@
   bottom: 0;
   right: 0;
   transform: translate(50%, 50%);
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-out;
   margin: 100px;
 }
 
@@ -127,12 +134,14 @@
 
 .footer {
   position: fixed;
+  font-weight: 700;
+  color: #272727;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+/* @media only screen and (max-width: 768px) and (min-width: 426px) {
   .circlesContainer {
     position: fixed;
     top: 50%;
@@ -243,4 +252,4 @@
     transition: all 1s ease-out;
     margin: 50px;
   }
-}
+} */
