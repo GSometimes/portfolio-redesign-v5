@@ -5,14 +5,17 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Extra from "./Extra";
+// import Slide from "react-reveal/Slide";
 
 export default function Navbar(props) {
   const [transition, setTransition] = useState(false);
+  const [show, setShow] = useState(false);
   const activeCircle = useRef();
 
   const handleClick = (color, route) => {
     activeCircle.current = color;
     setTransition(!transition);
+    setShow(!show);
     setTimeout(() => {
       color === "black"
         ? props.history.push("/")
@@ -36,6 +39,7 @@ export default function Navbar(props) {
           style={activeCircle.current === "blue" ? style : {}}
           className={`blueCircle ${transitionActive1}`}
           onClick={() => handleClick("blue", "projects")}
+          show={show}
         ></div>
         <div
           style={activeCircle.current === "red" ? style : {}}
@@ -59,8 +63,8 @@ export default function Navbar(props) {
             onClick={() => handleClick("black")}
           ></div>
         </div>
-        <div className="footer">Portfolio by Sometimes</div>
       </div>
+      <div className="footer">Portfolio by Sometimes</div>
 
       <Switch>
         <Route path="/projects">

@@ -7,6 +7,14 @@ export default function About() {
       <div className="aboutFrame">
         <h1>About</h1>
       </div>
+      <div className="wrapper">
+        <div className="aleftColumn">
+          <h1>Left Column</h1>
+        </div>
+        <div className="arightColumn">
+          <h1>Right Column</h1>
+        </div>
+      </div>
     </div>
   );
 }

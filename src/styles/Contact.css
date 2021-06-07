@@ -14,3 +14,23 @@
   transform: translate(-50%, -50%);
   z-index: -100;
 }
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cleftColumn {
+  border: 5px solid #613f75;
+  height: 100vh;
+  width: 500px;
+}
+
+.crightColumn {
+  border: 5px solid #613f75;
+  height: 100vh;
+  width: 500px;
+}
